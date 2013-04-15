@@ -64,14 +64,6 @@ body {
 	padding-bottom: 0;
 }
 
-.parenthetical:before {
-	content: "(";
-}
-
-.parenthetical:after {
-	content: ")";
-}
-
 .dialog {
 	margin-left: 24%;
 	margin-right: 28%;
