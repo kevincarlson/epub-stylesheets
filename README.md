@@ -25,7 +25,7 @@ full text of the license is included at the bottom of this document.
 
 First, add a minified copy of the appropriate stylesheet to your ePub project,
 and link to it in each HTML file that will use the styles. To apply the styles,
-use the classes defined in the specific stylesheet.
+add the appropriate CSS classes to your HTML elements.
 
 ## License
 
