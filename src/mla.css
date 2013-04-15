@@ -37,3 +37,20 @@ p {
   margin: 0;
   padding: 0;
 }
+
+
+@media print {
+  body {
+    margin-left: 1in;
+    margin-right: 1in;
+
+	/***
+	 * Setting the top and bottom margins to 0, as web browsers don't apply
+	 * this to each page individually (better to let the user specify a
+	 * custom top and bottom margin for the page)
+	 **/
+
+	margin-bottom: 0;
+	margin-top: 0;
+  }
+}
