@@ -21,6 +21,33 @@
  *  DEALINGS IN THE SOFTWARE.
  ******************************************************************************/
 
+/**
+ * NOTES ABOUT THIS STYLESHEET:
+ *     - Element widths are determined based on the standard Hollywood
+ *           screenplay formatting guidelines, and specified by percentages.
+ *           This way, the proper formatting will be preserved when printing to
+ *           US Letter paper (8.5 x 11 in), while approximating the correct
+ *           formatting on displays of different sizes.
+ *     - The Barnes & Noble Nook eReader is incompatible with the
+ *           text-transform: uppercase property. Best practice is to capitalize
+ *           this text in the HTML source, though the property remains as a fall
+ *           back on compatible devices.
+ *     - Aldiko Reader for Android insists on adding a text-indent to any
+ *           paragraph without a class that explicitly removes the indentation.
+ *           That's why 'text-indent: 0;' appears in all classes intended for
+ *           text, instead of as a property of the paragraph tag, itself.
+ *     - The Nook also ignores CSS rules for adding text before/after elements
+ *           of a particular class. For this reason, parentheses are not added
+ *           automatically to parenthetical text.
+ *     - Note that this stylesheet has not been tested with Amazon's EPub to
+ *           MobiPocket conversion utility. It may or may not work. I make no
+ *           promises ;-)
+ *     - Otherwise, this stylesheet is compatible with the HTML output generated
+ *           from the Celtx screenwriting software. For best results, you may
+ *           choose to remove the extraneous line breaks added at the end of
+ *           each paragraph.
+ */
+
 body {
  	background-color: #fff;
  	color: #000;
@@ -40,17 +67,20 @@ body {
 
 .sceneheading {
 	page-break-after: avoid;
+	text-indent: 0;
 	text-transform: uppercase;
 }
 
 .action {
 	clear: both;
+	text-indent: 0;
 }
 
 .character {
 	margin-left: 43.2%;
 	padding-bottom: 0;
 	page-break-after: avoid;
+	text-indent: 0;
 	text-transform: uppercase;
 }
 
@@ -62,27 +92,32 @@ body {
 	margin-left: 35.2%;
 	margin-right: 40.8%;
 	padding-bottom: 0;
+	text-indent: 0;
 }
 
 .dialog {
 	margin-left: 24%;
 	margin-right: 28%;
+	text-indent: 0;
 }
 
 .titlepage {
     page-break-after: always;
 	margin-top: 15%;
+	text-indent: 0;
 }
 
 .title {
 	line-height: 2em;
 	text-align: center;
+	text-indent: 0;
 }
 
 .author {
 	line-height: 2em;
 	margin-bottom: 10%;
     text-align: center;
+    text-indent: 0;
 }
 
 .titlepagebottom {
@@ -99,16 +134,19 @@ body {
 
 .copyright {
 	float: left;
+	text-indent: 0;
 	width: 40%;
 }
 
 .contact {
 	float: right;
+	text-indent: 0;
 	width: 40%;
 }
 
 .transition {
 	text-align: right;
+	text-indent: 0;
 	text-transform: uppercase;
 }
 
@@ -120,7 +158,7 @@ body {
 		/***
 		 * Setting the top and bottom margins to 0, as web browsers don't apply
 		 * this to each page individually (better to let the user specify a
-		 * custom top and bottom margin for the page)
+		 * custom top and bottom margin upon printing the document).
 		 **/
 
 		margin-bottom: 0;
