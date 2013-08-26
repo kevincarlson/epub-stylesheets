@@ -5,7 +5,7 @@ This project contains a small collection of stylesheets suitable for styling
 eBooks conforming to the ePub 2.1 specification. I have tested the styles in the
 Sigil ePub editor, as well as on the Barnes and Noble Nook Simple Touch, and the
 Aldiko Reader application for Android (on both the ASUS Nexus 7 tablet, and HTC
-One V smartphone).
+First smartphone).
 
 The stylesheets are distributed under the terms of the MIT License. As such, you
 are free to use them as you wish - even in commercial or for-profit projects.
@@ -16,10 +16,9 @@ full text of the license is included at the bottom of this document.
 
 ## Available Stylesheets
 
-* *Screenplay.css* - Hollywood-style screenplays
-* *MLA* - long-form essays for school (with citations)
-* *APA* - long-form papers for college (with title page, multiple sections, and
-  citations)
+* *screenplay.css* - Hollywood-style screenplays
+* *modern-report.css* - for academic essays conforming to the MLA guidelines
+* *longform-report.css* - for long-form academic essays conforming to the APA guidelines
 
 ## Using the Stylesheets
 The stylesheets can be used as they appear in the src directory. Each one is annotated to facilitate integrating it into the document. For this reason, it is recommended that you minify the stylesheets before publication, to remove extra whitespace and comments that are not necessary for the finished document. This step is optional.
@@ -41,6 +40,14 @@ This stylesheet specifies the following classes:
 * *.transition* - cuts, dissolves, fades, etc.
 
 Additional classes are available for creating title pages for screenplays.
+
+### Modern Report
+
+This stylesheet is currently under construction.
+
+### Longform Report
+
+This is also under construction.
 
 ## License
 
