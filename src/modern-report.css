@@ -24,20 +24,42 @@
 body {
   background-color: #fff;
   color: #000;
-  font-family: "Times New Roman", "Georgia", serif;
-  font-size: 1em;
-  line-height: 2em;
   margin-bottom: 20px;
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 30px;
 }
 
-p {
-  margin: 0;
-  padding: 0;
+h1 h2 h3 h4 h5 h6 {
+  font-family: "Times New Roman", "Georgia", serif;
+  font-size: 1em;
 }
 
+p {
+  font-family: "Times New Roman", "Georgia", serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  text-indent: .5in;
+}
+
+blockquote {
+  margin-left: 1in;
+}
+
+.citation {
+  padding-left: .5in;
+  text-indent: -.5in;
+}
+
+.frontmatter {
+  text-indent: 0;
+}
+
+.title {
+  text-align: center;
+  text-indent: 0;
+}
 
 @media print {
   body {

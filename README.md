@@ -38,7 +38,16 @@ Additional classes are available for creating title pages.
 
 ### Modern Report
 
-This stylesheet is currently under construction.
+The Modern Report stylesheet provides a skeleton for creating reports conforming to the MLA guidelines. Note, however, that these formatting rules are not a magic bullet, and will not account for all aspects of the format.
+
+The stylesheet does provide correct spacing, paragraph indentation, frontmatter, a title class, and a class for bibliographic citations. Due to current limitations, we cannot provide the running header for each page, nor can we provide automatically numbered headings.
+
+* All tagged paragraphs and headings in the document will be double spaced, set in Times New Roman, Georgia, or a serif typeface
+* Use the *.frontmatter* class for the name, instructor's name, course, and date at the beginning of the paper
+    - These can be individual paragraphs with the *.frontmatter* class, or a single paragraph split with &lt;br /&gt; tags
+* The *.title* class is used for the title of the paper, and to denote the end notes, and works cited sections
+* Long quotes use the blockquote tag
+* Bibliographic citations use the *.citation* class
 
 ### Longform Report
 
