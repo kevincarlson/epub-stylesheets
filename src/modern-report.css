@@ -1,5 +1,5 @@
 /*******************************************************************************
- *  Styling for the MLA format
+ *  Styling for the Modern Report format
  *  Copyright (C) 2013 by Kevin Carlson. All rights reserved.
  *
  *  Permission is hereby granted, free of charge, to any person obtaining a
@@ -33,17 +33,22 @@ body {
 h1 h2 h3 h4 h5 h6 {
   font-family: "Times New Roman", "Georgia", serif;
   font-size: 1em;
+  line-height: 2em;
 }
 
 p {
   font-family: "Times New Roman", "Georgia", serif;
   font-size: 1em;
+  line-height: 2em;
   margin: 0;
   padding: 0;
   text-indent: .5in;
 }
 
 blockquote {
+  font-family: "Times New Roman", "Georgia", serif;
+  font-size: 1em;
+  line-height: 2em;
   margin-left: 1in;
 }
 
