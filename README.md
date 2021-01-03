@@ -1,20 +1,12 @@
 ePub Stylesheets
 ================
 
-This project contains a small collection of stylesheets suitable for styling eBooks conforming to the ePub 2.1 specification. I have tested the styles in the Sigil ePub editor, as well as on the Barnes and Noble Nook Simple Touch, and the Aldiko Reader application for Android (on both the ASUS Nexus 7 tablet, and HTC First smartphone).
-
-The stylesheets are distributed under the terms of the MIT License. As such, you are free to use them as you wish; even in commercial or for-profit projects. The only required form of attribution is to preserve the license text at the beginning of the stylesheets, which is only visible when editing the file. The full text of the license is included at the bottom of this document.
+This project contains a small collection of stylesheets suitable for styling eBooks conforming to the ePub 2.1 specification.
 
 ## Available Stylesheets
 
 * *screenplay.css* - Hollywood-style screenplays
 * *modern-report.css* - for academic essays conforming to the MLA guidelines
-* *longform-report.css* - for long-form academic essays conforming to the APA guidelines
-
-## Using the Stylesheets
-The stylesheets can be used as they appear in the src directory. Each one is annotated to facilitate integrating it into the document. For this reason, it is recommended that you minify the stylesheets before publication, to remove extra whitespace and comments that are not necessary for the finished document. This step is optional.
-
-In order to use the formatting, be sure to link to the stylesheet in the &lt;head&gt; element of each HTML section, and apply the necessary styles to each element in the document. Sigil users can right click on the desired HTML file in the Book Browser (normally to the left of the editor), and select &lsquo;Link Stylesheets&hellip;&rsquo; to apply the formatting.
 
 ### Screenplay
 
@@ -48,24 +40,6 @@ The stylesheet does provide correct spacing, paragraph indentation, frontmatter,
 * The *.title* class is used for the title of the paper, and to denote the end notes, and works cited sections
 * Long quotes use the blockquote tag
 * Bibliographic citations use the *.citation* class
-
-### Longform Report
-
-This is also under construction.
-
-## Contributing to the Project
-
-There are a number of areas in this project where contribution is more than welcome. I'm hoping to expand the scope of this project to include other types of documents, and alternative stylesheets (e.g. add a stylesheet for writing letters, or add a stage variation of the screenplay stylesheet). Any ideas or requests are welcome.
-
-While I strive to write standards compliant CSS, I am aware that different devices produce different quirks when rendering documents. Any testing and feedback on additional devices is greatly appreciated, as I do not have access to every reading system that could come in contact with these stylesheets.
-
-CSS style contributions are also welcome, under the following conditions:
-
-* The contributor must hold the legal rights to distribute the style rules being submitted
-    - CSS that you write from scratch is fine
-    - CSS copied from a web page, or a project where you do not hold the copyright cannot be accepted
-* The contributed CSS must be licensed under the same terms as this project (the MIT license)
-* Contributors must list themselves as the copyright holder over the relevant CSS sections
 
 Any code contributions that do not adhere to these guidelines will be removed from the source tree.
 
